@@ -48,15 +48,15 @@ public class JavaApplication1 {
             String idiom = UtilConsola.leerCadena("idioma : ", true);
             palabra.getarrayTraduccion().put(idiom, traduc);
             palabra._save();
-            /*
+
             Map arrayTraduccion = palabra.getarrayTraduccion();
             Iterator it = arrayTraduccion.keySet().iterator();
             while(it.hasNext()){
-                Integer key = (Integer) it.next();
+                String key = (String) it.next();
                 System.out.println("Clave: " + key + " -> Valor: " + arrayTraduccion.get(key));
             }
             System.out.println(palabra.getId());
-            */
+
         }
         
     }
